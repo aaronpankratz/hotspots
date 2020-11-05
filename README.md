@@ -7,9 +7,9 @@ cloc `brew install cloc`
 git `brew install git`  
 
 ## usage
-1. copy this script into your source code repository
-1. run the script with `python3 hotspots.py`  
-1. the script will persist a sqlite db `hotspots.db` to your file system, connect to the db to analyze your files `sqlite3 hotspots.db`
+1. Copy this script into your source code repository
+1. Run the script with `python3 hotspots.py`  
+1. The script will persist a sqlite db `hotspots.db` to your file system. Connect to the db to analyze your files `sqlite3 hotspots.db`
 
 The database has one table, `files`, with columns `name, change_frequency, blank, comment, code`
 
