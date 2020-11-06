@@ -3,7 +3,7 @@ import csv
 import sqlite3
 
 cloc = "cloc ./ --by-file --csv --quiet --report-file=cloc.csv"
-cf = "git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -r | sed -e 's/ *\([[:digit:]]*\) *\(.*\)/\\2,\\1/' > cf.csv"
+cf = "git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -r | sed -e 's/ *\([[:digit:]]*\) *\(.*\)/.\/\\2,\\1/' > cf.csv"
 
 if not os.path.exists("cloc.csv"):
     os.system(cloc)
